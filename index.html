@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@_nature__editing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      #background {
+        background-image: url(https://i.pinimg.com/736x/a5/45/c3/a545c33c1425f0cd0c0637df3d43475a.jpg);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #main {
+        display: flex;
+        position: relative;
+        height: 80%;
+        width: 50%;
+        background-color: white;
+        border-radius: 5%;
+      }
+
+      #part1 {
+        height: 80%;
+        width: 30%;
+        position: relative;
+      }
+
+      #img-div {
+        animation-name: right-left;
+        animation-duration: 2s;
+        left: 10%;
+        top: 30%;
+        position: relative;
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        background-color: aqua;
+      }
+
+      #img-div img {
+        position: absolute;
+        height: 100%;
+        border-radius: 50%;
+        width: 100%;
+        background-size: cover;
+      }
+
+      #part2 {
+        padding: 9% 2%;
+        height: 80%;
+        position: relative;
+        width: 70%;
+      }
+
+      #text {
+        animation-name: left-right;
+        animation-duration: 2s;
+
+        margin: 1% 5%;
+        position: relative;
+        display: flex;
+        gap: 30px;
+      }
+
+      #text h3 {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 2px;
+      }
+
+      #text h4 {
+        animation-name: left-right;
+        animation-delay: 2s;
+        cursor: pointer;
+        top: 50%;
+        text-align: center;
+        position: relative;
+        width: 80px;
+        height: 30px;
+        padding: 1% 0%;
+        border: 1px solid rgba(0, 0, 0, 0.329);
+        border-radius: 8%;
+      }
+
+      #text button {
+        cursor: pointer;
+        top: 50%;
+        text-align: center;
+        position: relative;
+        width: 100px;
+        height: 30px;
+        padding: 1% 0%;
+        border-radius: 7%;
+        border: 0.1px solid black;
+        background-color: #0095f6;
+      }
+
+      #post-part {
+        animation-name: right-left;
+        animation-duration: 2s;
+        margin: 5% 0%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #post-part h3 {
+        font-weight: 600;
+      }
+
+      #name {
+        animation-name: left-right;
+        animation-duration: 2s;
+        margin: 3% 5%;
+      }
+
+      #name h2 {
+        font-size: 18px;
+      }
+
+      #photo {
+        animation-name: right-left;
+        animation-duration: 2s;
+        margin: -2% 5%;
+      }
+
+      #photo h4 {
+        color: rgba(2, 2, 2, 0.274);
+      }
+
+      #bio {
+        animation-name: left-right;
+        animation-duration: 2s;
+        margin: 3% 5%;
+        line-height: 130%;
+      }
+
+      #bio h5 {
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-size: 13px;
+      }
+
+      #yt {
+        animation-name: right-left;
+        animation-duration: 2s;
+        margin: -3% 5%;
+        line-height: 170%;
+      }
+
+      #yt h2 {
+        cursor: pointer;
+        font-size: 20px;
+        color: #00376b;
+      }
+
+      #yt p {
+        color: rgba(2, 2, 2, 0.596);
+        font-size: 13px;
+      }
+
+      #my-click {
+        animation-name: left-right;
+        animation-duration: 2s;
+        display: flex;
+        position: relative;
+        z-index: 555;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        top: 80%;
+      }
+
+      .img {
+        margin: 0% 6%;
+      }
+
+      #my-click img {
+        background-size: cover;
+        width: 80px;
+        border-radius: 50%;
+        height: 80px;
+        border: 1px solid rgba(0, 0, 0, 0.356);
+      }
+
+      @keyframes left-right {
+        from {
+          transform: translate(-200%, 0%);
+        }
+
+        to {
+          transform: translate(0%);
+        }
+      }
+
+      @keyframes right-left {
+        from {
+          transform: translate(200%, 0%);
+        }
+
+        to {
+          transform: translate(0%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background">
+      <div id="main">
+        <div id="part1">
+          <div id="img-div">
+            <img src="https://i.pinimg.com/280x280_RS/d4/40/56/d4405681559806e7fcc09640ca67e50c.jpg" alt="" />
+          </div>
+        </div>
+        <div id="part2">
+          <div id="text">
+            <h3>_nature__editing</h3>
+            <h4>Message</h4>
+            <button>Follow</button>
+          </div>
+          <div id="post-part">
+            <h3>365 posts</h3>
+            <h3 id="h3">955 followers</h3>
+            <h3>100 following</h3>
+          </div>
+          <div id="name">
+            <h2>RAAJ_ARYAN™©🇮🇳</h2>
+          </div>
+          <div id="photo"><h4>Photographer</h4></div>
+          <div id="bio">
+            <h5>#👨‍💻Web Developer</h5>
+            <h5>#🎂Born 2nd October 🎂</h5>
+            <h5>#📷I Like Photo Editing📷</h5>
+            <h5>#📷Photographer📷</h5>
+            <h5>#🎶Music Lover🎶</h5>
+            <h5>#👨Follow Me For More👨</h5>
+          </div>
+          <div id="yt">
+            <h2>www.youtube.com/c/CODE-MONSTER</h2>
+            <p>Followed by _code__monster and _viral_coding_school</p>
+          </div>
+        </div>
+        <div id="my-click">
+          <div class="img">
+            <img
+              src="https://i.pinimg.com/564x/5a/73/31/5a733112b24588419d37c9cfe745a27a.jpg"
+              alt=""
+            />
+          </div>
+          <div class="img">
+            <img
+              src="https://i.pinimg.com/736x/1c/74/a1/1c74a17c32dda70a0945f80cd2f8a270.jpg"
+              alt=""
+            />
+          </div>
+          <div class="img">
+            <img
+              src="https://i.pinimg.com/564x/93/59/c7/9359c7900dd35ef0d73f7b2f8e2878e6.jpg"
+              alt=""
+            />
+          </div>
+          <div class="img">
+            <img
+              src="https://i.pinimg.com/564x/4d/ca/c5/4dcac53cc132a45384435c5b06b8418b.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var btn = document.querySelector("button");
+      var h3 = document.querySelector("#h3");
+      var btnclick = 0;
+      btn.addEventListener("click", function () {
+        if (btnclick === 0) {
+          btn.innerHTML = "Following";
+          h3.innerHTML = "956 followers";
+          btn.style.backgroundColor = "white";
+          btnclick = 1;
+          console.log("Hey Raaj Aryan I'm working properly");
+        } else {
+          btn.innerHTML = "Follow";
+          console.log("Hey Raaj Aryan I'm working properly");
+          h3.innerHTML = "953 followers";
+          btn.style.backgroundColor = "#0095f6";
+
+          btnclick = 0;
+        }
+      });
+    </script>
+  </body>
+</html>
